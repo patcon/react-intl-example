@@ -20,11 +20,11 @@ if (navigator.language === "es-MX") {
 function loadMessages(locale) {
   switch (locale) {
     case "ar":
-      return import("./lang/ar.json");
+      return import("./lang/ar.compiled.json");
     case "en":
       return import("./lang/en.json");
     case "es-MX":
-      return import("./lang/es-MX.json");
+      return import("./lang/es-MX.compiled.json");
     default:
       return import("./lang/en.json");
   }

@@ -1,9 +1,23 @@
 {
-  "message.simple": "A simple message.",
-  "message.argument": "Hi, {name}! 👋",
-  "message.plural": "{count, plural, one {# item} other {# items}}",
-  "message.select": "{gender, select, male {Mr} female {Mrs} other {User}}",
-  "message.text-format": "Hi, <b>John</b>!",
-  "message.number-format": "Formatted number: {num, number, ::K}",
-  "message.currency-format": "Formatted currency: {amount, number, ::currency/USD}"
+  "AavDn+": {
+    "defaultMessage": "Hi, {name}! 👋"
+  },
+  "B8MRsI": {
+    "defaultMessage": "{count, plural, one {# item} other {# items}}"
+  },
+  "BYSCHz": {
+    "defaultMessage": "{gender, select, male {Mr} female {Mrs} other {User}}"
+  },
+  "DEMgCP": {
+    "defaultMessage": "Formatted currency: {amount, number, ::currency/USD}"
+  },
+  "ID4J8v": {
+    "defaultMessage": "A simple message."
+  },
+  "XJTeb4": {
+    "defaultMessage": "Hi, <b>John</b>!"
+  },
+  "o/77IL": {
+    "defaultMessage": "Formatted number: {num, number, ::K}"
+  }
 }

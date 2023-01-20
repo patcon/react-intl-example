@@ -72,19 +72,19 @@ function App({ locale, direction, onLocaleChange }) {
 
       <div dir={direction} style={{ padding: 20 }} data-testid="examples">
         <h3>Declarative examples</h3>
-        <FormattedMessage id="message.simple" />
+        <FormattedMessage defaultMessage="A simple message." />
         <br />
-        <FormattedMessage id="message.argument" values={{ name: "John" }} />
+        <FormattedMessage defaultMessage="Hi, {name}! 👋" values={{ name: "John" }} />
         <br />
-        <FormattedMessage id="message.plural" values={{ count: 6 }} />
+        <FormattedMessage defaultMessage="{count, plural, one {# item} other {# items}}" values={{ count: 6 }} />
         <br />
-        <FormattedMessage id="message.select" values={{ gender: "female" }} />
+        <FormattedMessage defaultMessage="{gender, select, male {Mr} female {Mrs} other {User}}" values={{ gender: "female" }} />
         <br />
-        <FormattedMessage id="message.text-format" values={{ b: (value) => <b>{value}</b> }} />
+        <FormattedMessage defaultMessage="Hi, <b>John</b>!" values={{ b: (value) => <b>{value}</b> }} />
         <br />
-        <FormattedMessage id="message.number-format" values={{ num: 7500 }} />
+        <FormattedMessage defaultMessage="Formatted number: {num, number, ::K}" values={{ num: 7500 }} />
         <br />
-        <FormattedMessage id="message.currency-format" values={{ amount: 7.5 }} />
+        <FormattedMessage defaultMessage="Formatted currency: {amount, number, ::currency/USD}" values={{ amount: 7.5 }} />
         <br />
         <FormattedNumber value={7500} />
         <br />
@@ -99,19 +99,19 @@ function App({ locale, direction, onLocaleChange }) {
         <FormattedList type="conjunction" value={["foo", "bar", "baz"]} />
 
         <h3>Imperative examples</h3>
-        {intl.formatMessage({ id: "message.simple" })}
+        {intl.formatMessage({ defaultMessage: "A simple message." })}
         <br />
-        {intl.formatMessage({ id: "message.argument" }, { name: "John" })}
+        {intl.formatMessage({ defaultMessage: "Hi, {name}! 👋" }, { name: "John" })}
         <br />
-        {intl.formatMessage({ id: "message.plural" }, { count: 5 })}
+        {intl.formatMessage({ defaultMessage: "{count, plural, one {# item} other {# items}}" }, { count: 5 })}
         <br />
-        {intl.formatMessage({ id: "message.select" }, { gender: "female" })}
+        {intl.formatMessage({ defaultMessage: "{gender, select, male {Mr} female {Mrs} other {User}}" }, { gender: "female" })}
         <br />
-        {intl.formatMessage({ id: "message.text-format" }, { b: (value) => <b>{value}</b> })}
+        {intl.formatMessage({ defaultMessage: "Hi, <b>John</b>!" }, { b: (value) => <b>{value}</b> })}
         <br />
-        {intl.formatMessage({ id: "message.number-format" }, { num: 7500 })}
+        {intl.formatMessage({ defaultMessage: "Formatted number: {num, number, ::K}" }, { num: 7500 })}
         <br />
-        {intl.formatMessage({ id: "message.currency-format" }, { amount: 7.5 })}
+        {intl.formatMessage({ defaultMessage: "Formatted currency: {amount, number, ::currency/USD}" }, { amount: 7.5 })}
         <br />
         {intl.formatNumber(7500)}
         <br />

@@ -16,6 +16,8 @@
   },
   "scripts": {
     "intl-extract": "formatjs extract './src/**/*.{js,ts,tsx}' --ignore './**/*.d.ts' --out-file src/lang/en.json --id-interpolation-pattern [sha512:contenthash:base64:6]",
+    "lint": "eslint ./src --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "npm run lint -- --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -27,7 +29,17 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "plugins": ["formatjs"],
+    "rules": {
+      "formatjs/no-offset": "error",
+      "formatjs/enforce-id": [
+        "error",
+        {
+          "idInterpolationPattern": "[sha512:contenthash:base64:6]"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -45,6 +57,7 @@
     "printWidth": 120
   },
   "devDependencies": {
-    "@formatjs/cli": "^5.1.12"
+    "@formatjs/cli": "^5.1.12",
+    "eslint-plugin-formatjs": "^4.3.9"
   }
 }

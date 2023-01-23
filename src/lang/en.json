@@ -1,58 +1,16 @@
 {
-  "AavDn+": {
-    "defaultMessage": "Hi, {name}! 👋"
-  },
-  "B8MRsI": {
-    "defaultMessage": "{count, plural, one {# item} other {# items}}"
-  },
-  "BYSCHz": {
-    "defaultMessage": "{gender, select, male {Mr} female {Mrs} other {User}}"
-  },
-  "DEMgCP": {
-    "defaultMessage": "Formatted currency: {amount, number, ::currency/USD}"
-  },
-  "ID4J8v": {
-    "defaultMessage": "A simple message."
+  "H7xJaD": {
+    "defaultMessage": "Yet another simple difference message.",
+    "description": "A sample autogen ID string with a description"
   },
   "Oqbn2M": {
-    "defaultMessage": "A message with autogen ID, without description."
+    "defaultMessage": "A simple message, but different."
   },
-  "XJTeb4": {
-    "defaultMessage": "Hi, <b>John</b>!"
-  },
-  "g5EBVc": {
-    "defaultMessage": "A message with autogen ID, with description.",
-    "description": "A sample manual ID string with a description"
-  },
-  "message.argument": {
-    "defaultMessage": "Hi, {name}! 👋"
-  },
-  "message.currency-format": {
-    "defaultMessage": "Formatted currency: {amount, number, ::currency/USD}"
-  },
-  "message.description": {
-    "defaultMessage": "A message with manual ID, with description.",
-    "description": "A sample manual ID string with a description"
-  },
-  "message.no_description": {
-    "defaultMessage": "A message with manual ID, without description."
-  },
-  "message.number-format": {
-    "defaultMessage": "Formatted number: {num, number, ::K}"
-  },
-  "message.plural": {
-    "defaultMessage": "{count, plural, one {# item} other {# items}}"
-  },
-  "message.select": {
-    "defaultMessage": "{gender, select, male {Mr} female {Mrs} other {User}}"
-  },
-  "message.simple": {
+  "examples.manual-id.no-description": {
     "defaultMessage": "A simple message."
   },
-  "message.text-format": {
-    "defaultMessage": "Hi, <b>John</b>!"
-  },
-  "o/77IL": {
-    "defaultMessage": "Formatted number: {num, number, ::K}"
+  "examples.manual-id.with-description": {
+    "defaultMessage": "Another simple message.",
+    "description": "A sample manual ID string with a description"
   }
 }

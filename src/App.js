@@ -66,42 +66,14 @@ function App({ locale, direction, onLocaleChange }) {
 
       <div dir={direction} style={{ padding: 20 }} data-testid="examples">
         <h3>Manual static ID examples</h3>
-        {intl.formatMessage({ defaultMessage: "A message with manual ID, without description.", id: 'message.no_description' })}
+        {intl.formatMessage({ defaultMessage: "A simple message.", id: 'examples.manual-id.no-description' })}
         <br />
-        {intl.formatMessage({ defaultMessage: "A message with manual ID, with description.", description: "A sample manual ID string with a description", id: 'message.description' })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "A simple message.", id: 'message.simple' })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Hi, {name}! 👋", id: 'message.argument' }, { name: "John" })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "{count, plural, one {# item} other {# items}}", id: 'message.plural' }, { count: 5 })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "{gender, select, male {Mr} female {Mrs} other {User}}", id: 'message.select' }, { gender: "female" })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Hi, <b>John</b>!", id: 'message.text-format' }, { b: (value) => <b>{value}</b> })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Formatted number: {num, number, ::K}", id: 'message.number-format' }, { num: 7500 })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Formatted currency: {amount, number, ::currency/USD}", id: 'message.currency-format' }, { amount: 7.5 })}
+        {intl.formatMessage({ defaultMessage: "Another simple message.", description: "A sample manual ID string with a description", id: 'examples.manual-id.with-description' })}
 
         <h3>Auto-generated ID examples</h3>
-        {intl.formatMessage({ defaultMessage: "A message with autogen ID, without description.", id: 'Oqbn2M' })}
+        {intl.formatMessage({ defaultMessage: "A simple message, but different.", id: 'Oqbn2M' })}
         <br />
-        {intl.formatMessage({ defaultMessage: "A message with autogen ID, with description.", id: 'H7xJaD', description: "A sample autogen ID string with a description" })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "A simple message.", id: 'ID4J8v' })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Hi, {name}! 👋", id: 'AavDn+' }, { name: "John" })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "{count, plural, one {# item} other {# items}}", id: 'B8MRsI' }, { count: 5 })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "{gender, select, male {Mr} female {Mrs} other {User}}", id: 'BYSCHz' }, { gender: "female" })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Hi, <b>John</b>!", id: 'XJTeb4' }, { b: (value) => <b>{value}</b> })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Formatted number: {num, number, ::K}", id: 'o/77IL' }, { num: 7500 })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Formatted currency: {amount, number, ::currency/USD}", id: 'DEMgCP' }, { amount: 7.5 })}
+        {intl.formatMessage({ defaultMessage: "Yet another simple difference message.", id: 'H7xJaD', description: "A sample autogen ID string with a description" })}
       </div>
 
       <div style={{ textAlign: "center", marginTop: 60, marginBottom: 20 }}>

@@ -17,6 +17,27 @@
   "XJTeb4": {
     "defaultMessage": "Hi, <b>John</b>!"
   },
+  "message.argument": {
+    "defaultMessage": "Hi, {name}! 👋"
+  },
+  "message.currency-format": {
+    "defaultMessage": "Formatted currency: {amount, number, ::currency/USD}"
+  },
+  "message.number-format": {
+    "defaultMessage": "Formatted number: {num, number, ::K}"
+  },
+  "message.plural": {
+    "defaultMessage": "{count, plural, one {# item} other {# items}}"
+  },
+  "message.select": {
+    "defaultMessage": "{gender, select, male {Mr} female {Mrs} other {User}}"
+  },
+  "message.simple": {
+    "defaultMessage": "A simple message."
+  },
+  "message.text-format": {
+    "defaultMessage": "Hi, <b>John</b>!"
+  },
   "o/77IL": {
     "defaultMessage": "Formatted number: {num, number, ::K}"
   }

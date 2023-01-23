@@ -66,6 +66,10 @@ function App({ locale, direction, onLocaleChange }) {
 
       <div dir={direction} style={{ padding: 20 }} data-testid="examples">
         <h3>Manual static ID examples</h3>
+        {intl.formatMessage({ defaultMessage: "A message with manual ID, without description.", id: 'message.no_description' })}
+        <br />
+        {intl.formatMessage({ defaultMessage: "A message with manual ID, with description.", description: "A sample manual ID string with a description", id: 'message.description' })}
+        <br />
         {intl.formatMessage({ defaultMessage: "A simple message.", id: 'message.simple' })}
         <br />
         {intl.formatMessage({ defaultMessage: "Hi, {name}! 👋", id: 'message.argument' }, { name: "John" })}
@@ -81,6 +85,10 @@ function App({ locale, direction, onLocaleChange }) {
         {intl.formatMessage({ defaultMessage: "Formatted currency: {amount, number, ::currency/USD}", id: 'message.currency-format' }, { amount: 7.5 })}
 
         <h3>Auto-generated ID examples</h3>
+        {intl.formatMessage({ defaultMessage: "A message with autogen ID, without description.", id: 'Oqbn2M' })}
+        <br />
+        {intl.formatMessage({ defaultMessage: "A message with autogen ID, with description.", id: 'H7xJaD', description: "A sample autogen ID string with a description" })}
+        <br />
         {intl.formatMessage({ defaultMessage: "A simple message.", id: 'ID4J8v' })}
         <br />
         {intl.formatMessage({ defaultMessage: "Hi, {name}! 👋", id: 'AavDn+' }, { name: "John" })}

@@ -14,14 +14,28 @@
   "ID4J8v": {
     "defaultMessage": "A simple message."
   },
+  "Oqbn2M": {
+    "defaultMessage": "A message with autogen ID, without description."
+  },
   "XJTeb4": {
     "defaultMessage": "Hi, <b>John</b>!"
+  },
+  "g5EBVc": {
+    "defaultMessage": "A message with autogen ID, with description.",
+    "description": "A sample manual ID string with a description"
   },
   "message.argument": {
     "defaultMessage": "Hi, {name}! 👋"
   },
   "message.currency-format": {
     "defaultMessage": "Formatted currency: {amount, number, ::currency/USD}"
+  },
+  "message.description": {
+    "defaultMessage": "A message with manual ID, with description.",
+    "description": "A sample manual ID string with a description"
+  },
+  "message.no_description": {
+    "defaultMessage": "A message with manual ID, without description."
   },
   "message.number-format": {
     "defaultMessage": "Formatted number: {num, number, ::K}"

@@ -39,7 +39,7 @@
       "formatjs/enforce-id": [
         "error",
         {
-          "idWhitelist": "\\.",
+          "idWhitelist": ["\\."],
           "idInterpolationPattern": "[sha512:contenthash:base64:6]"
         }
       ]

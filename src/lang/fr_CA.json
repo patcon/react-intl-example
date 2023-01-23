@@ -1,16 +1,16 @@
 {
   "Y5f+IH": {
-    "defaultMessage": "Encore un autre message de différence simple.",
+    "message": "Encore un autre message de différence simple.",
     "description": "A sample autogen ID string with a description"
   },
   "examples.manual-id.no-description": {
-    "defaultMessage": "Un simple message."
+    "message": "Un simple message."
   },
   "examples.manual-id.with-description": {
-    "defaultMessage": "Un autre message simple.",
+    "message": "Un autre message simple.",
     "description": "A sample manual ID string with a description"
   },
   "sPy6rB": {
-    "defaultMessage": "Un message simple, mais différent."
+    "message": "Un message simple, mais différent."
   }
 }

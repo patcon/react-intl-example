@@ -71,34 +71,22 @@ function App({ locale, direction, onLocaleChange }) {
       </div>
 
       <div dir={direction} style={{ padding: 20 }} data-testid="examples">
-        <h3>Declarative examples</h3>
-        <FormattedMessage defaultMessage="A simple message." id="ID4J8v" />
+        <h3>Manual static ID examples</h3>
+        {intl.formatMessage({ defaultMessage: "A simple message.", id: 'message.simple' })}
         <br />
-        <FormattedMessage defaultMessage="Hi, {name}! 👋" id="AavDn+" values={{ name: "John" }} />
+        {intl.formatMessage({ defaultMessage: "Hi, {name}! 👋", id: 'message.argument' }, { name: "John" })}
         <br />
-        <FormattedMessage defaultMessage="{count, plural, one {# item} other {# items}}" id="B8MRsI" values={{ count: 6 }} />
+        {intl.formatMessage({ defaultMessage: "{count, plural, one {# item} other {# items}}", id: 'message.plural' }, { count: 5 })}
         <br />
-        <FormattedMessage defaultMessage="{gender, select, male {Mr} female {Mrs} other {User}}" id="BYSCHz" values={{ gender: "female" }} />
+        {intl.formatMessage({ defaultMessage: "{gender, select, male {Mr} female {Mrs} other {User}}", id: 'message.select' }, { gender: "female" })}
         <br />
-        <FormattedMessage defaultMessage="Hi, <b>John</b>!" id="XJTeb4" values={{ b: (value) => <b>{value}</b> }} />
+        {intl.formatMessage({ defaultMessage: "Hi, <b>John</b>!", id: 'message.text-format' }, { b: (value) => <b>{value}</b> })}
         <br />
-        <FormattedMessage defaultMessage="Formatted number: {num, number, ::K}" id="o/77IL" values={{ num: 7500 }} />
+        {intl.formatMessage({ defaultMessage: "Formatted number: {num, number, ::K}", id: 'message.number-format' }, { num: 7500 })}
         <br />
-        <FormattedMessage defaultMessage="Formatted currency: {amount, number, ::currency/USD}" id="DEMgCP" values={{ amount: 7.5 }} />
-        <br />
-        <FormattedNumber value={7500} />
-        <br />
-        <FormattedNumber value={7.5} style="currency" currency="USD" /> {/* eslint-disable-line */}
-        <br />
-        <FormattedDate value={Date.now()} year="numeric" month="long" day="2-digit" />
-        <br />
-        <FormattedTime value={Date.now()} />
-        <br />
-        <FormattedRelativeTime value={0} numeric="auto" updateIntervalInSeconds={1} />
-        <br />
-        <FormattedList type="conjunction" value={["foo", "bar", "baz"]} />
+        {intl.formatMessage({ defaultMessage: "Formatted currency: {amount, number, ::currency/USD}", id: 'message.currency-format' }, { amount: 7.5 })}
 
-        <h3>Imperative examples</h3>
+        <h3>Auto-generated ID examples</h3>
         {intl.formatMessage({ defaultMessage: "A simple message.", id: 'ID4J8v' })}
         <br />
         {intl.formatMessage({ defaultMessage: "Hi, {name}! 👋", id: 'AavDn+' }, { name: "John" })}
@@ -112,18 +100,6 @@ function App({ locale, direction, onLocaleChange }) {
         {intl.formatMessage({ defaultMessage: "Formatted number: {num, number, ::K}", id: 'o/77IL' }, { num: 7500 })}
         <br />
         {intl.formatMessage({ defaultMessage: "Formatted currency: {amount, number, ::currency/USD}", id: 'DEMgCP' }, { amount: 7.5 })}
-        <br />
-        {intl.formatNumber(7500)}
-        <br />
-        {intl.formatNumber(7.5, { style: "currency", currency: "USD" })}
-        <br />
-        {intl.formatDate(Date.now(), { year: "numeric", month: "long", day: "2-digit" })}
-        <br />
-        {intl.formatTime(Date.now())}
-        <br />
-        {intl.formatRelativeTime(-5, "second", { style: "narrow" })}
-        <br />
-        {intl.formatList(["foo", "bar", "baz"], { type: "conjunction" })}
       </div>
 
       <div style={{ textAlign: "center", marginTop: 60, marginBottom: 20 }}>

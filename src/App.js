@@ -5,20 +5,20 @@ import {
 } from "react-intl";
 
 let initLocale = "en";
-if (navigator.language === "es-MX") {
-  initLocale = "es-MX";
-} else if (navigator.language === "ar") {
-  initLocale = "ar";
+if (navigator.language === "qu") {
+  initLocale = "qu";
+} else if (navigator.language === "fr-CA") {
+  initLocale = "fr-CA";
 }
 
 function loadMessages(locale) {
   switch (locale) {
-    case "ar":
-      return import("./lang/ar.compiled.json");
+    case "fr-CA":
+      return import("./lang/fr_CA.compiled.json");
     case "en":
       return import("./lang/en.json");
-    case "es-MX":
-      return import("./lang/es-MX.compiled.json");
+    case "qu":
+      return import("./lang/qu.compiled.json");
     default:
       return import("./lang/en.json");
   }
@@ -26,11 +26,11 @@ function loadMessages(locale) {
 
 function getDirection(locale) {
   switch (locale) {
-    case "ar":
-      return "rtl";
+    case "fr-CA":
+      return "ltr";
     case "en":
       return "ltr";
-    case "es-MX":
+    case "qu":
       return "ltr";
     default:
       return "ltr";
@@ -59,8 +59,8 @@ function App({ locale, direction, onLocaleChange }) {
       <div style={{ textAlign: "center" }}>
         <select value={locale} onChange={(e) => onLocaleChange(e.target.value)}>
           <option value="en">en</option>
-          <option value="es-MX">es-MX</option>
-          <option value="ar">ar</option>
+          <option value="fr-CA">fr-CA</option>
+          <option value="qu">qu</option>
         </select>
       </div>
 
@@ -71,9 +71,9 @@ function App({ locale, direction, onLocaleChange }) {
         {intl.formatMessage({ defaultMessage: "Another simple message.", description: "A sample manual ID string with a description", id: 'examples.manual-id.with-description' })}
 
         <h3>Auto-generated ID examples</h3>
-        {intl.formatMessage({ defaultMessage: "A simple message, but different.", id: 'Oqbn2M' })}
+        {intl.formatMessage({ defaultMessage: "A simple message, but different.", id: 'sPy6rB' })}
         <br />
-        {intl.formatMessage({ defaultMessage: "Yet another simple difference message.", id: 'H7xJaD', description: "A sample autogen ID string with a description" })}
+        {intl.formatMessage({ defaultMessage: "Yet another simple difference message.", id: 'Y5f+IH', description: "A sample autogen ID string with a description" })}
       </div>
 
       <div style={{ textAlign: "center", marginTop: 60, marginBottom: 20 }}>

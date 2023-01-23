@@ -16,8 +16,8 @@
   },
   "scripts": {
     "intl-extract": "formatjs extract './src/**/*.{js,ts,tsx}' --ignore './**/*.d.ts' --out-file src/lang/en.json --id-interpolation-pattern [sha512:contenthash:base64:6]",
-    "intl-compile-ar": "formatjs compile ./src/lang/ar.json --out-file ./src/lang/ar.compiled.json --ast",
-    "intl-compile-es": "formatjs compile ./src/lang/es-MX.json --out-file ./src/lang/es-MX.compiled.json --ast",
+    "intl-compile-ar": "formatjs compile ./src/lang/fr_CA.json --out-file ./src/lang/fr_CA.compiled.json --ast",
+    "intl-compile-es": "formatjs compile ./src/lang/qu.json --out-file ./src/lang/qu.compiled.json --ast",
     "intl-compile": "npm run intl-compile-ar && npm run intl-compile-es",
     "lint": "eslint ./src --ext .js,.ts,.jsx,.tsx",
     "lint:fix": "npm run lint -- --fix",

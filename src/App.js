@@ -2,12 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   useIntl,
   IntlProvider,
-  FormattedMessage,
-  FormattedDate,
-  FormattedTime,
-  FormattedRelativeTime,
-  FormattedNumber,
-  FormattedList,
 } from "react-intl";
 
 let initLocale = "en";

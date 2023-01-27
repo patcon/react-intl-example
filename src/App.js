@@ -65,15 +65,10 @@ function App({ locale, direction, onLocaleChange }) {
       </div>
 
       <div dir={direction} style={{ padding: 20 }} data-testid="examples">
-        <h3>Manual static ID examples</h3>
-        {intl.formatMessage({ defaultMessage: "A simple message.", id: 'examples.manual-id.no-description' })}
-        <br />
-        {intl.formatMessage({ defaultMessage: "Another simple message.", description: "A sample manual ID string with a description", id: 'examples.manual-id.with-description' })}
-
         <h3>Auto-generated ID examples</h3>
-        {intl.formatMessage({ defaultMessage: "A simple message, but different.", id: 'sPy6rB' })}
+        {intl.formatMessage({ defaultMessage: "A simple message.", id: 'ID4J8v' })}
         <br />
-        {intl.formatMessage({ defaultMessage: "Yet another simple difference message.", id: 'Y5f+IH', description: "A sample autogen ID string with a description" })}
+        {intl.formatMessage({ defaultMessage: "Another simple message.", id: 'f4dXj5', description: "A sample autogen ID string with a description" })}
       </div>
     </div>
   );

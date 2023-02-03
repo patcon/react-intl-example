@@ -66,9 +66,11 @@ function App({ locale, direction, onLocaleChange }) {
 
       <div dir={direction} style={{ padding: 20 }} data-testid="examples">
         <h3>Manual static ID examples</h3>
-        {intl.formatMessage({ defaultMessage: "A simple message.", id: 'examples/manual-id/no-description' })}
+        {intl.formatMessage({ defaultMessage: "A simple edited message.", id: 'examples/manual-id/no-description' })}
         <br />
-        {intl.formatMessage({ defaultMessage: "Another simple message.", description: "A sample manual ID string with a description", id: 'examples/manual-id/with-description' })}
+        {intl.formatMessage({ defaultMessage: "Another simple edited message.", description: "A sample manual ID string with a description", id: 'examples/manual-id/with-description' })}
+        <br />
+        {intl.formatMessage({ defaultMessage: "Some new message", description: "A sample manual ID string that's new", id: 'examples/manual-id/new' })}
       </div>
     </div>
   );

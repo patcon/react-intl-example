@@ -75,11 +75,6 @@ function App({ locale, direction, onLocaleChange }) {
         <br />
         {intl.formatMessage({ defaultMessage: "Yet another simple difference message.", id: 'Y5f+IH', description: "A sample autogen ID string with a description" })}
       </div>
-
-      <div style={{ textAlign: "center", marginTop: 60, marginBottom: 20 }}>
-        For more details, please see the full <a href="https://localizely.com/blog/react-intl-tutorial/"> post</a> on
-        Localizely.
-      </div>
     </div>
   );
 }

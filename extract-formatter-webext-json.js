@@ -13,3 +13,16 @@ exports.format = function (msgs) {
   }
   return results
 }
+
+// Sets the order fo the sub-keys to match Weblate.
+// See: https://formatjs.io/docs/tooling/cli/#custom-formatter
+// See: https://stackoverflow.com/a/72200940
+exports.compareMessages = (a, b) => {
+  const sortOrder = [
+    'message',
+    'description',
+  ];
+  if (!sortOrder.includes(a)) return 1
+  if (!sortOrder.includes(b)) return -1
+  return sortOrder.indexOf(a.key) - sortOrder.indexOf(b.key);
+}

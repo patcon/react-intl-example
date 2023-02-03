@@ -3,7 +3,7 @@
     "message": "A simple message."
   },
   "examples/manual-id/with-description": {
-    "description": "A sample manual ID string with a description",
-    "message": "Another simple message."
+    "message": "Another simple message.",
+    "description": "A sample manual ID string with a description"
   }
 }

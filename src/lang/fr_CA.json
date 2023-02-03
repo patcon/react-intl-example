@@ -1,16 +1,9 @@
 {
-  "Y5f+IH": {
-    "message": "Encore un autre message de différence simple.",
-    "description": "A sample autogen ID string with a description"
-  },
   "examples.manual-id.no-description": {
     "message": "Un simple message."
   },
   "examples.manual-id.with-description": {
     "message": "Un autre message simple.",
     "description": "A sample manual ID string with a description"
-  },
-  "sPy6rB": {
-    "message": "Un message simple, mais différent."
   }
 }

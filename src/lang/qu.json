@@ -1,16 +1,9 @@
 {
-  "Y5f+IH": {
-    "message": "Huk sasan diferencia willakuyraq.",
-    "description": "A sample autogen ID string with a description"
-  },
   "examples.manual-id.no-description": {
     "message": "Huk sasan willakuy."
   },
   "examples.manual-id.with-description": {
     "message": "Huk sasan willakuy.",
     "description": "A sample manual ID string with a description"
-  },
-  "sPy6rB": {
-    "message": "Huk sasan willakuy, ichaqa hukniray."
   }
 }

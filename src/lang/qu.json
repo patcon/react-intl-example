@@ -1,8 +1,8 @@
 {
-  "examples.manual-id.no-description": {
+  "examples/manual-id/no-description": {
     "message": "Huk sasan willakuy."
   },
-  "examples.manual-id.with-description": {
+  "examples/manual-id/with-description": {
     "message": "Huk sasan willakuy.",
     "description": "A sample manual ID string with a description"
   }

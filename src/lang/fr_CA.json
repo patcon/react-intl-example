@@ -1,9 +1,13 @@
 {
   "examples/manual-id/no-description": {
-    "message": "Un simple message."
+    "message": "Un simple message revise."
   },
   "examples/manual-id/with-description": {
-    "message": "Un autre message simple.",
+    "message": "Un autre message simple revise.",
     "description": "A sample manual ID string with a description"
+  },
+  "examples/manual-id/new": {
+    "message": "Un nouveau message.",
+    "description": "A sample manual ID string that's new"
   }
 }
